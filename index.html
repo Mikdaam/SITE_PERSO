@@ -749,15 +749,15 @@
 
     function sendData()
     {
-      var nom = document.getElementById("name").value;
-      var prenom = document.getElementById("age").value;
+      var nom = document.getElementById("nom").value;
+      var prenom = document.getElementById("prenom").value;
       var mail = document.getElementById("mail").value;
       var sujet = document.getElementById("sujet").value;
       var message = document.getElementById("message").value;
 
       $.ajax({
         type: 'post',
-        url: '/php/sendmail.php',
+        url: 'php/sendmail.php',
         data: {
           nom:nom,
           prenom:prenom,
