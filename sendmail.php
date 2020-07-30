@@ -25,5 +25,4 @@
 
     // Envoi
     mail($to, $sujet, $html, implode("\r\n", $headers));
-		echo "How are you?";
 ?>
