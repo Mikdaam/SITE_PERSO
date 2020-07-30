@@ -5,21 +5,24 @@
 	margin: 0;
 	padding: 0;
 }*/
+/***********************Header************************/
 .navbar-brand img {
 	max-height: 40px;
 }
 .img {
-	background-image: url(../img/Photo.jpg);
+	background-image: url(../img/code.jpg);
 	min-height: 70vh;
-	clip-path: circle(115.5% at 0 0);
+	/*clip-path: circle(115.5% at 0 0);*/
 }
+
+/******************************Hard skills*****************************/
 .cont {
 	position: relative;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	background: #000000;
+	background: #fefefe;
 }
 .cont .ca {
 	position: relative;
@@ -31,6 +34,7 @@
 	height: 200px;
 	border-radius: 4px;
 	margin-bottom: 15px;
+	margin-top: 15px;
 	overflow: hidden;
 	text-align: center;
 	transition: 0.5s;
@@ -157,13 +161,15 @@
 	-webkit-transform: scale(1.2); /* Safari 3-8 */
 	transform: scale(1.2);
 }
+/****************************End hard skill***********************************/
+
 .text {
     padding: 15%;
     background: linear-gradient(135deg,#ffffff,#000);
 }
 .sub-title {
     border-bottom: 10px solid #000000;
-    color: #d7d7d7;
+    color: #010101;
     display: block;
     font-size: 25px;
     padding-bottom: 8px;
@@ -181,6 +187,11 @@ blockquote {
 	color: #337ab7
 }
 
+
+
+
+
+/****************************Footer**************************************/
 /* Social Media Icons */
 .social-media-list {
   position: relative;
@@ -229,3 +240,4 @@ blockquote {
   letter-spacing: 1px;
   text-align: center;
 }
+/***************************************End Footer*******************************************/

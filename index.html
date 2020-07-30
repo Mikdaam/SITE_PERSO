@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Site professionnel de Mikdaam BADAROU, étudiant en DUT Informatique à l'institut universitaire de technologie de Sénart-Fontainebleau.">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- CSS -->
@@ -50,7 +51,7 @@
     <div class="container-fluid mb-4" id="haut">
       <div class="row">
         <div class="col-12">
-          <p class="sub-title">Accueil</p>
+          <p class="sub-title"><i class="fas fa-home"></i> Accueil</p>
           <h1 class="text">Je 
             <span
               class="txt-rotate"
@@ -66,7 +67,7 @@
     <div class="container-fluid mb-4 mt-4" id="about">
       <div class="row">
         <div class="col-12">
-          <p class="sub-title">Présentation</p>
+          <p class="sub-title"><i class="fas fa-user-circle"></i> Présentation</p>
         </div>
         <div class="col-12 col-md-6">
           <h1>QUI SUIS-JE ?</h1>
@@ -92,7 +93,9 @@
 
         <!-- ******************************Compétence******************************** -->
         <div class="col-12 col-md-6">
-          <h1 class="display-6">Compétences</h1>
+          <h1 class="display-6"><img src="https://img.icons8.com/ios/50/000000/development-skill.png"/> Compétences</h1>
+          <hr class="my-1">
+          <h3>Langage WEB</h3>
           <hr class="my-1">
           <div class="cont">
             <div class="ca">
@@ -179,7 +182,12 @@
                 </div>
               </div>
             </div>
-          </div>      
+          </div>
+          <h3>Langage de programmation</h3>
+          <hr class="my-1">  
+          <div class="cont">
+            
+          </div>    
         </div>
       </div>
     </div>
@@ -191,8 +199,8 @@
           <p class="sub-title">Portfolio</p>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-4">
-        <div class="col mb-4">
+      <div class="row row-cols-1 row-cols-md-4 img">
+        <div class="col mb-4 mt-4">
           <div class="card h-100">
             <div class="zoom">
               <img src="img/snake.jpg" class="card-img-top" alt="Le menu du jeu">
@@ -206,7 +214,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 mt-4">
           <div class="card h-100">
             <div class="zoom">
               <img src="img/sudoku.png" class="card-img-top" alt="Le menu du jeu">
@@ -220,7 +228,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 mt-4">
           <div class="card h-100">
             <div class="zoom">
               <img src="img/web.png" class="card-img-top" alt="Logo de l'app">
@@ -234,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4 mt-4">
           <div class="card h-100">
             <div class="zoom">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Pas d'image</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="30%" y="50%" fill="#eceeef" dy=".3em">Image indisponible</text></svg>
@@ -256,7 +264,7 @@
     <div class="container-fluid mb-4" id="blog">
       <div class="row">
         <div class="col-12">
-          <p class="sub-title">Blog</p>
+          <p class="sub-title"><i class="fas fa-blog"></i> Blog</p>
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-4">
@@ -324,7 +332,8 @@
     <div class="container-fluid mb-4 mt-4" id="cv">
       <div class="row">
         <div class="col-12">
-          <p class="sub-title">CV</p>
+          <p class="sub-title"><img src="https://img.icons8.com/ios/50/000000/resume.png" alt="logo de CV" height="30" /> CV</p>
+          <img src="img/other.png" alt="Cover">
         </div>
       </div>
     </div>
@@ -333,10 +342,10 @@
     <div class="container-fluid mb-4" id="contact">
       <div class="row">
         <div class="col-12">
-          <p class="sub-title">Contact</p>
+          <p class="sub-title"><i class="fas fa-address-card"></i> Contact</p>
         </div>
         <div class="col-12 col-md-6">
-          <form method="POST" onsubmit="return sendData();">
+          <form method="POST" onsubmit="sendData();">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nom">Nom</label>
@@ -379,10 +388,13 @@
           <!-- <div class="alert alert-success" role="alert">
             A simple success alert—check it out!
           </div> -->
-          <div id="res" ></div>   
+          <div id="res"></div>   
         </div>
         <div class="col-12 col-md-6">
-            
+            <p>
+              Le bonheur ne se donne pas, il se travaille, il se peine, plus on attend des autres qu'ils nous donnent du bonheur, plus on court vers la frustration. Mais si l'on y travaille, lentement, parfois même péniblement, un jour on se demandera pourquoi l'on est tant heureux.<br>
+              <span>Boris Cyrulnik</span>
+            </p>
             <hr>
             <ul class="social-media-list">
               <li><a href="https://github.com/Mikdaam" target="_blank" class="contact-icon">
@@ -726,11 +738,10 @@
         this.loopNum++;
         delta = 500;
       }
-
       setTimeout(function() {
-        that.tick();
-      }, delta);
-    };
+          that.tick();
+        }, delta);
+      };
 
     window.onload = function() {
       var elements = document.getElementsByClassName('txt-rotate');
@@ -748,7 +759,7 @@
       document.body.appendChild(css);
     };
 
-    function sendData()
+  /*function sendata()
     {
       var nom = document.getElementById("nom").value;
       var prenom = document.getElementById("prenom").value;
@@ -758,7 +769,7 @@
 
       $.ajax({
         type: 'post',
-        url: '/php/sendmail.php',
+        url: 'sendmail.php',
         data: {
           nom:nom,
           prenom:prenom,
@@ -772,7 +783,7 @@
         }
       });        
       return false;
-    }
+    }*/
 
     $(function() {
       $('a[href^="#"]').click(function(){
