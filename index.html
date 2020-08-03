@@ -353,7 +353,7 @@ Bon bref, à la prochaine, mais c'est pas sur que je reviendrais là dessus.
           <p class="sub-title"><i class="fas fa-address-card"></i> Contact</p>
         </div>
         <div class="col-12 col-md-6">
-          <form method="POST" onsubmit="return sendData();">
+          <form method="POST" action="sendmail.php">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nom">Nom</label>
@@ -391,7 +391,7 @@ Bon bref, à la prochaine, mais c'est pas sur que je reviendrais là dessus.
                 Veuillez écrire votre message.
               </div>
             </div>
-            <input class="btn btn-outline-primary button-loader" data-loading-text="En cours d'envoi... <i class='fa fa-spin fa-spinner'></i>" type="submit" value="Envoyer">
+            <input type="submit" value="Envoyer" class="btn btn-outline-primary button-loader">
           </form>
           <!-- <div class="alert alert-success" role="alert">
             A simple success alert—check it out!
@@ -924,31 +924,31 @@ Bon bref, à la prochaine, mais c'est pas sur que je reviendrais là dessus.
       autoType(".type-js",200);
     });
 
-    function sendata()
-    {
-      var nom = document.getElementById("nom").value;
-      var prenom = document.getElementById("prenom").value;
-      var mail = document.getElementById("mail").value;
-      var sujet = document.getElementById("sujet").value;
-      var message = document.getElementById("message").value;
-
-      $.ajax({
-        type: 'post',
-        url: 'sendmail.php',
-        data: {
-          nom:nom,
-          prenom:prenom,
-          mail:mail,
-          sujet:sujet,
-          message:message
-        },
-        success: function (response) {
-          //$('.alert').show(3000).hide(2000);
-          $('#res').html("Vos données seront sauvegardées");
-        }
-      });
-      return false;
-    }
+    // function sendata()
+    // {
+    //   var nom = document.getElementById("nom").value;
+    //   var prenom = document.getElementById("prenom").value;
+    //   var mail = document.getElementById("mail").value;
+    //   var sujet = document.getElementById("sujet").value;
+    //   var message = document.getElementById("message").value;
+    //
+    //   $.ajax({
+    //     type: 'post',
+    //     url: 'sendmail.php',
+    //     data: {
+    //       nom:nom,
+    //       prenom:prenom,
+    //       mail:mail,
+    //       sujet:sujet,
+    //       message:message
+    //     },
+    //     success: function (response) {
+    //       //$('.alert').show(3000).hide(2000);
+    //       $('#res').html("Vos données seront sauvegardées");
+    //     }
+    //   });
+    //   return false;
+    // }
 
     $(function() {
       $('a[href^="#"]').click(function(){

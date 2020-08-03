@@ -1,9 +1,9 @@
 <?php
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$mail = $_POST['mail'];
-	$sujet = $_POST['sujet'];
-	$message = $_POST['message'];
+	$nom = strip_tags($_POST['nom']);
+	$prenom = strip_tags($_POST['prenom']);
+	$mail = strip_tags($_POST['mail']);
+	$sujet = strip_tags($_POST['sujet']);
+	$message = strip_tags($_POST['message']);
 	$to = "bmikdaam@gmail.com";
 	$html = '
 	<html>
@@ -25,4 +25,5 @@
 
     // Envoi
     mail($to, $sujet, $html, implode("\r\n", $headers));
+		header("Location: index.html");
 ?>
