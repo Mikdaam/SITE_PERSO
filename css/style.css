@@ -1,18 +1,40 @@
-/*body {
+body {
 	font-family: 'Comic Neue', cursive;
-}*/
+}
 /** {
 	margin: 0;
 	padding: 0;
 }*/
+
+/* *************************Card style*************************** */
+.card {
+	background-color: #0F1A20;
+	color: #F1FAEE;
+	border-radius: 25px;
+	box-shadow: 0 15px 15px rgba(0,0,0,.5);
+}
 /***********************Header************************/
 .navbar-brand img {
 	max-height: 40px;
 }
-.img {
-	background-image: url(../img/code.jpg);
-	min-height: 70vh;
+.img-pf {
+	background-image: url(../img/keybord.png);
+	min-height: 50vh;
 	/*clip-path: circle(115.5% at 0 0);*/
+}
+
+/* **********************CV************************************/
+.img-cv {
+	background-image: url(../img/other.png);
+	min-height: calc(60vh - 50px);
+	align-items: center;
+}
+
+.first {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 60vh;
+	align-items: center;
+	clip-path: polygon(0 0, 100% 0%, 91% 100%, 0% 100%);
 }
 
 /******************************Hard skills*****************************/
@@ -150,6 +172,7 @@
 }
 .zoom {
 	overflow: hidden;
+	border: solid black 2px;
 }
 .card-img-top {
 	transition: transform .5s;
@@ -163,9 +186,19 @@
 }
 /****************************End hard skill***********************************/
 
-.text {
-    padding: 15%;
-    background: linear-gradient(135deg,#ffffff,#000);
+.back {
+    /*padding: 15%;*/
+		color: #F1FAEE;
+		background-image: url(../img/welcome.png);
+		min-height: 60vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+}
+.trans {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	text-align: center;
 }
 .sub-title {
     border-bottom: 10px solid #000000;
@@ -205,7 +238,7 @@ blockquote {
 }
 
 .social-media-list li {
-  position: relative; 
+  position: relative;
   top: 0;
   left: -20px;
   display: inline-block;
@@ -216,16 +249,16 @@ blockquote {
   border-radius: 50%;
   color: #fff;
   background-color: rgb(27,27,27);
-  cursor: pointer; 
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .social-media-list li:hover:after {
-  opacity: 1;  
+  opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }

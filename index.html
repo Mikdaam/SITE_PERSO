@@ -1,4 +1,8 @@
-
+<!--
+Site web et code source à compléter en raison de manque d'inspiration et d'imagintion.
+En plus de ça, je pers trop de temps pour le développement de ce site.
+Bon bref, à la prochaine, mais c'est pas sur que je reviendrais là dessus.
+ -->
 <!doctype html>
 <html lang="fr">
   <head>
@@ -53,13 +57,13 @@
       <div class="row">
         <div class="col-12">
           <p class="sub-title"><i class="fas fa-home"></i> Accueil</p>
-          <h1 class="text">Je
-            <span
-              class="txt-rotate"
-              data-period="2000"
-              data-rotate='[ "mappelle AYOMIDE BADAROU.", "suis une pipelette.", "suis kilograve.", "parle trop.", "suis pas drôle!" ]'>
-            </span>
-        </h1>
+          <div class="back">
+            <div class="trans">
+              <div class="type-js">
+                <h1 class="text-js">Bienvenue sur mon site</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -95,8 +99,6 @@
         <!-- ******************************Compétence******************************** -->
         <div class="col-12 col-md-6">
           <h1 class="display-6"><img src="https://img.icons8.com/ios/50/000000/development-skill.png"/> Compétences</h1>
-          <hr class="my-1">
-          <h3>Langage WEB</h3>
           <hr class="my-1">
           <div class="cont">
             <div class="ca">
@@ -184,11 +186,6 @@
               </div>
             </div>
           </div>
-          <h3>Langage de programmation</h3>
-          <hr class="my-1">
-          <div class="cont">
-
-          </div>
         </div>
       </div>
     </div>
@@ -200,7 +197,7 @@
           <p class="sub-title">Portfolio</p>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-4 img">
+      <div class="row row-cols-1 row-cols-md-4 img-pf">
         <div class="col mb-4 mt-4">
           <div class="card h-100">
             <div class="zoom">
@@ -334,10 +331,20 @@
       <div class="row">
         <div class="col-12">
           <p class="sub-title"><img src="https://img.icons8.com/ios/50/000000/resume.png" alt="logo de CV" height="30" /> CV</p>
-          <img src="img/other.png" alt="Cover">
         </div>
       </div>
-    </div>
+      <div class="row img-cv">
+        <div class="col-12 col-md-6 first d-flex align-item-center">
+          <div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cvModal">
+              Visualiser le CV
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+
+        </div>
+      </div>
 
     <!-- *********************************Formulaire de contact********************************* -->
     <div class="container-fluid mb-4" id="contact">
@@ -346,7 +353,7 @@
           <p class="sub-title"><i class="fas fa-address-card"></i> Contact</p>
         </div>
         <div class="col-12 col-md-6">
-          <form method="POST" onsubmit="sendData();">
+          <form method="POST" onsubmit="return sendData();">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nom">Nom</label>
@@ -523,6 +530,7 @@
             <p class="sub-title">
               <i class="far fa-eye" style="font-size: 2rem;"></i> Aperçu
             </p>
+            <img src="img/error.png" alt="Pas d'aperçu" width="100%">
             <p class="sub-title">
               <i class="fas fa-book" style="font-size: 2rem;"></i> Description
             </p>
@@ -600,6 +608,7 @@
             <p class="sub-title">
               <i class="far fa-eye" style="font-size: 2rem;"></i> Aperçu
             </p>
+            <img src="img/error.png" alt="Pas d'aperçu" width="100%">
             <p class="sub-title">
               <i class="fas fa-book" style="font-size: 2rem;"></i> Description
             </p>
@@ -665,6 +674,7 @@
             <p class="sub-title">
               <i class="far fa-eye" style="font-size: 2rem;"></i> Aperçu
             </p>
+            <img src="img/error.png" alt="Pas d'aperçu" width="100%">
             <p class="sub-title">
               <i class="fas fa-book" style="font-size: 2rem;"></i> Description
             </p>
@@ -695,6 +705,185 @@
       </div>
     </div>
 
+    <!-- ***************************************Modal pour le CV *************************** -->
+    <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">CV</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="p1" style="overflow: hidden; position: relative; background-color: white; width: 909px; height: 1286px;">
+
+              <!-- Begin shared CSS values -->
+              <style class="shared-css" type="text/css" >
+              .t {
+                transform-origin: bottom left;
+                z-index: 2;
+                position: absolute;
+                white-space: pre;
+                overflow: visible;
+                line-height: 1.5;
+              }
+              </style>
+              <!-- End shared CSS values -->
+
+
+              <!-- Begin inline CSS -->
+              <style type="text/css" >
+
+              #t1_1{left:102px;bottom:584px;letter-spacing:0.61px;}
+              #t2_1{left:102px;bottom:563px;letter-spacing:0.61px;}
+              #t3_1{left:402px;bottom:313px;letter-spacing:0.74px;}
+              #t4_1{left:380px;bottom:367px;letter-spacing:1.09px;}
+              #t5_1{left:380px;bottom:344px;letter-spacing:0.75px;}
+              #t6_1{left:402px;bottom:206px;letter-spacing:0.74px;}
+              #t7_1{left:380px;bottom:262px;letter-spacing:1.09px;}
+              #t8_1{left:380px;bottom:239px;letter-spacing:0.75px;}
+              #t9_1{left:402px;bottom:108px;letter-spacing:0.75px;}
+              #ta_1{left:380px;bottom:164px;letter-spacing:1.1px;}
+              #tb_1{left:380px;bottom:140px;letter-spacing:0.75px;}
+              #tc_1{left:437px;bottom:746px;letter-spacing:0.95px;}
+              #td_1{left:437px;bottom:726px;letter-spacing:0.57px;}
+              #te_1{left:98px;bottom:407px;letter-spacing:0.61px;}
+              #tf_1{left:98px;bottom:372px;letter-spacing:0.6px;}
+              #tg_1{left:98px;bottom:338px;letter-spacing:0.61px;}
+              #th_1{left:102px;bottom:539px;letter-spacing:0.61px;}
+              #ti_1{left:437px;bottom:703px;letter-spacing:0.55px;}
+              #tj_1{left:437px;bottom:640px;}
+              #tk_1{left:437px;bottom:618px;letter-spacing:0.94px;}
+              #tl_1{left:437px;bottom:562px;letter-spacing:0.93px;word-spacing:-0.8px;}
+              #tm_1{left:437px;bottom:538px;letter-spacing:0.96px;word-spacing:-0.8px;}
+              #tn_1{left:380px;bottom:1028px;letter-spacing:5.85px;word-spacing:0.01px;}
+              #to_1{left:380px;bottom:405px;letter-spacing:4.35px;}
+              #tp_1{left:380px;bottom:911px;letter-spacing:4.36px;}
+              #tq_1{left:380px;bottom:876px;letter-spacing:0.75px;}
+              #tr_1{left:380px;bottom:852px;letter-spacing:0.75px;}
+              #ts_1{left:380px;bottom:811px;letter-spacing:4.35px;}
+              #tt_1{left:380px;bottom:769px;letter-spacing:1.11px;}
+              #tu_1{left:380px;bottom:583px;letter-spacing:1.09px;}
+              #tv_1{left:59px;bottom:435px;letter-spacing:4.35px;}
+              #tw_1{left:102px;bottom:871px;letter-spacing:0.61px;}
+              #tx_1{left:102px;bottom:854px;letter-spacing:0.61px;}
+              #ty_1{left:102px;bottom:754px;letter-spacing:0.61px;}
+              #tz_1{left:102px;bottom:797px;letter-spacing:0.61px;}
+              #t10_1{left:61px;bottom:911px;letter-spacing:4.35px;}
+              #t11_1{left:61px;bottom:626px;letter-spacing:4.36px;}
+              #t12_1{left:380px;bottom:667px;letter-spacing:1.1px;}
+              #t13_1{left:380px;bottom:506px;letter-spacing:1.08px;}
+              #t14_1{left:402px;bottom:480px;letter-spacing:0.93px;}
+              #t15_1{left:402px;bottom:451px;letter-spacing:0.97px;}
+              #t16_1{left:61px;bottom:273px;letter-spacing:4.35px;}
+              #t17_1{left:98px;bottom:241px;letter-spacing:0.61px;}
+              #t18_1{left:98px;bottom:207px;letter-spacing:0.61px;}
+              #t19_1{left:97px;bottom:171px;letter-spacing:0.61px;}
+
+              .s1{font-size:12px;font-family:Assistant-Regular_12;color:#FFF;}
+              .s2{font-size:17px;font-family:Assistant-Regular_12;color:#444440;}
+              .s3{font-size:18px;font-family:Assistant-SemiBold_13;color:#444440;}
+              .s4{font-size:17px;font-family:Assistant-ExtraLight_14;color:#444440;}
+              .s5{font-size:15px;font-family:Assistant-ExtraLight_14;color:#444440;}
+              .s6{font-size:16px;font-family:Assistant-ExtraLight_14;color:#444440;}
+              .s7{font-size:20px;font-family:SourceSansPro-Bold_15;color:#5BA7D1;}
+              .s8{font-size:15px;font-family:SourceSansPro-Bold_15;color:#5BA7D1;}
+              .s9{font-size:15px;font-family:SourceSansPro-Bold_15;color:#FFF;}
+              </style>
+              <!-- End inline CSS -->
+
+              <!-- Begin embedded font definitions -->
+              <style id="fonts1" type="text/css" >
+
+              @font-face {
+                font-family: Assistant-ExtraLight_14;
+                src: url("fonts/Assistant-ExtraLight_14.woff") format("woff");
+              }
+
+              @font-face {
+                font-family: Assistant-Regular_12;
+                src: url("fonts/Assistant-Regular_12.woff") format("woff");
+              }
+
+              @font-face {
+                font-family: Assistant-SemiBold_13;
+                src: url("fonts/Assistant-SemiBold_13.woff") format("woff");
+              }
+
+              @font-face {
+                font-family: SourceSansPro-Bold_15;
+                src: url("fonts/SourceSansPro-Bold_15.woff") format("woff");
+              }
+
+              </style>
+              <!-- End embedded font definitions -->
+
+              <!-- Begin page background -->
+              <div id="pg1Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+              <div id="pg1" style="-webkit-user-select: none;"><object width="909" height="1286" data="1/1.svg" type="image/svg+xml" id="pdf1" style="width:909px; height:1286px; -moz-transform:scale(1); z-index: 0;"></object></div>
+              <!-- End page background -->
+
+
+              <!-- Begin text definitions (Positioned/styled in CSS) -->
+              <div id="t1_1" class="t s1">Microsoft Word</div>
+              <div id="t2_1" class="t s1">Microsoft Excel</div>
+              <div id="t3_1" class="t s2">Diplôme en cours d'obtention</div>
+              <div id="t4_1" class="t s3">IUT Sénart Fontainebleau</div>
+              <div id="t5_1" class="t s4">DUT Informatique | Sept 2019 - 2021</div>
+              <div id="t6_1" class="t s2">Formation non terminée</div>
+              <div id="t7_1" class="t s3">IUT de Lokossa</div>
+              <div id="t8_1" class="t s4">1ère année de Génie Civil | Sept 2018 - Jan 2019</div>
+              <div id="t9_1" class="t s2">Mention : Assez-Bien</div>
+              <div id="ta_1" class="t s3">CSEP Kétou</div>
+              <div id="tb_1" class="t s4">Baccalauréat Scientifique | Juin 2018</div>
+              <div id="tc_1" class="t s5">HTML5 &amp; CSS3</div>
+              <div id="td_1" class="t s6">Javascript (Framework)</div>
+              <div id="te_1" class="t s1">Français : Lu, Parlé et écrit</div>
+              <div id="tf_1" class="t s1">Anglais : Lu et écrit</div>
+              <div id="tg_1" class="t s1">Yoruba : Langue martenelle</div>
+              <div id="th_1" class="t s1">Power Point</div>
+              <div id="ti_1" class="t s6">PHP (POO, Framework)</div>
+              <div id="tj_1" class="t s5">C</div>
+              <div id="tk_1" class="t s5">Java</div>
+              <div id="tl_1" class="t s5">SQL (Oracle)</div>
+              <div id="tm_1" class="t s5">MySQL (phpMyAdmin)</div>
+              <div id="tn_1" class="t s7">ETUDIANT EN DUT INFORMATIQUE</div>
+              <div id="to_1" class="t s8">FORMATIONS</div>
+              <div id="tp_1" class="t s8">PROFIL</div>
+              <div id="tq_1" class="t s2">Je suis étudiant en 2ème année de DUT Informatique à l'IUT</div>
+              <div id="tr_1" class="t s2">de Sénart Fontainebleau.</div>
+              <div id="ts_1" class="t s8">COMPÉTENCES</div>
+              <div id="tt_1" class="t s3">Langage WEB</div>
+              <div id="tu_1" class="t s3">Base de données</div>
+              <div id="tv_1" class="t s9">LANGUES</div>
+              <div id="tw_1" class="t s1">65 Rue de Lagny, Paris 20</div>
+              <div id="tx_1" class="t s1">(75020)</div>
+              <div id="ty_1" class="t s1">www.reallygreatsite.com</div>
+              <div id="tz_1" class="t s1">mikdaambadarou@gmail.com</div>
+              <div id="t10_1" class="t s9">CONTACT</div>
+              <div id="t11_1" class="t s9">LOGICIELS</div>
+              <div id="t12_1" class="t s3">Langage de Programmation</div>
+              <div id="t13_1" class="t s3">Système d'exploitation</div>
+              <div id="t14_1" class="t s5">Linux</div>
+              <div id="t15_1" class="t s5">Windows</div>
+              <div id="t16_1" class="t s9">CENTRE D'INTÉRÊTS</div>
+              <div id="t17_1" class="t s1">Basket ball</div>
+              <div id="t18_1" class="t s1">Séries TV</div>
+              <div id="t19_1" class="t s1">Jeux Vidéos</div>
+
+              <!-- End text definitions -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="img/CV.zip">
+              <button type="button" class="btn btn-primary"><i class="fas fa-download"></i> Télécharger le CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -704,63 +893,41 @@
     <script src="https://kit.fontawesome.com/f71ef18966.js" crossorigin="anonymous"></script>
     <script src="js/dynamic.js"></script>
     <script>
-      var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-      };
-
-      TxtRotate.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
+    function autoType(elementClass, typingSpeed){
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function(){
+        thhis.css("opacity",1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for(var i = 0; i < amntOfChars; i++){
+          (function(i,char){
+            setTimeout(function() {
+              newString += char;
+              thhis.text(newString);
+            },i*typingSpeed);
+          })(i+1,text[i]);
         }
+      },1500);
+    }
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    $(document).ready(function(){
+      // Now to start autoTyping just call the autoType function with the
+      // class of outer div
+      // The second paramter is the speed between each letter is typed.
+      autoType(".type-js",200);
+    });
 
-      var that = this;
-      var delta = 300 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
-      setTimeout(function() {
-          that.tick();
-        }, delta);
-      };
-
-    window.onload = function() {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };
-
-  /*function sendata()
+    function sendata()
     {
       var nom = document.getElementById("nom").value;
       var prenom = document.getElementById("prenom").value;
@@ -784,7 +951,7 @@
         }
       });
       return false;
-    }*/
+    }
 
     $(function() {
       $('a[href^="#"]').click(function(){
@@ -799,6 +966,6 @@
         return false;
       });
     })
-    </script>
+</script>
   </body>
 </html>
