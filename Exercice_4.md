@@ -23,6 +23,12 @@ $$F(X) : graphe\ de\ la\ fonction\ de\ répartion$$
 
 $$F(X) : je\ ne\ sais\ pas\ ce\ que \ sais$$
 
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=je\%20ne\%20sais\%20pas\%20ce\%20que\%20sais.)
+
+![e^{i \pi} = -1](https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1)
+
+$$e^{i \pi} = -1$$
+
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
 
