@@ -18,3 +18,12 @@ $$p(0)+p(1)+p(2)+p(3)=30/36$$
 ![Fonction de répartition](file:///C:/Users/OLOYE/Desktop/DUT_FI_2/MATH/MATH3.1/TD/TD_Varia_Alea/fonction.PNG)
 
 $$F(X) : graphe\ de\ la\ fonction\ de\ répartion$$
+
+![Fonction de répartition](file:///C:/Users/OLOYE/Desktop/DUT_FI_2/MATH/MATH3.1/TD/TD_Varia_Alea/Autre.PNG)
+
+$$F(X) : je\ ne\ sais\ pas\ ce\ que \ sais$$
+
+
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
